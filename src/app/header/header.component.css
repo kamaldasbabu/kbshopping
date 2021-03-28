@@ -1,0 +1,28 @@
+* {box-sizing: border-box;}
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 10px;
+}
+
+.zx {
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+}
+.search{
+  padding: 5px;
+  margin-top: 0;
+  width: 100%;
+}
+.header-menu {
+  margin-left: 50px;
+}
+
+.abc {
+  background-color: yellow;
+}

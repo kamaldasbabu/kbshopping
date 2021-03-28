@@ -1,0 +1,64 @@
+<mat-toolbar>
+    <mat-toolbar-row class="zx">
+      <div>
+        <button mat-icon-button class="example-icon" 
+        aria-label="Example icon-button with menu icon"
+        (click)="openSideNav()">
+        <mat-icon>menu</mat-icon>
+        </button>
+        <span><button (click)="onTest('test')" mat-icon-button><mat-icon>hd</mat-icon></button>
+          YouTube<sup>TM</sup></span>
+      </div>
+      <div class="abc">
+        <form>
+          <input type="text" class="search" placeholder="Search.....">
+            <button mat-icon-button><mat-icon>search</mat-icon></button>
+            <button mat-icon-button>
+            <mat-icon  aria-label="Example icon-button with mic icon" color="warn">mic</mat-icon></button>
+          
+        </form>
+      </div>   
+      <div class="header-menu">
+        <button mat-button
+        [matMenuTriggerFor]="viewMenu"
+        ><mat-icon>view_module</mat-icon></button>
+        <mat-menu #viewMenu="matMenu" xPosition="before">
+          <button mat-menu-item>Youtube Tv</button>
+          <button mat-menu-item>YoutubeKids</button>
+          <button mat-menu-item>Youtube Music</button>
+          <button mat-menu-item>Creator academy</button>
+          <button mat-menu-item>Youtube Artist</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="viewNotification">
+          <mat-icon  color="primary"
+            matBadge="8" matBadgePosition="after" matBadgeColor="accent" 
+            aria-label="Example icon-button with notification_important icon" 
+            aria-hidden="false">
+            notification_important
+          </mat-icon>
+        </button>
+        <mat-menu #viewNotification="matMenu" xPosition="before">
+          <p>Notification</p>
+          <button mat-menu-item>Notifucation 1</button>
+          <button mat-menu-item>Notifucation 2</button>
+          <button mat-menu-item>Notifucation 3</button>
+          <button mat-menu-item>Notifucation 4</button>
+          <button mat-menu-item>Notifucation 5</button>
+        </mat-menu>
+         
+      <button mat-icon-button class="example-icon"
+        [matMenuTriggerFor]="viewPerson"
+        aria-label="Example icon-button with share icon">
+        <mat-icon>perm_identity</mat-icon>
+        </button>
+        <mat-menu #viewPerson="matMenu" xPosition="before">
+          <p>Profile...</p> 
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 1</button>
+        </mat-menu>
+      </div>
+          
+      
+                    
+    </mat-toolbar-row>       
+  </mat-toolbar>
